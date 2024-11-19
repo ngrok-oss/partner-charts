@@ -1,0 +1,22 @@
+# questions for required fields
+questions:
+- variable: credentials.apiKey
+  description: "You can find your ngrok API Key at https://dashboard.ngrok.com/api-keys"
+  default: ""
+  required: true
+  type: password
+  label: ngrok API Key
+  group: "Credentials"
+- variable: credentials.authtoken
+  description: "You can find your ngrok Authtoken at https://dashboard.ngrok.com/get-started/your-authtoken"
+  default: ""
+  required: true
+  type: password
+  label: ngrok Authtoken
+  group: "Credentials"
+- variable: clusterName
+  description: "User-defined name for the cluster"
+  default: "my-k8s-cluster"
+  required: true
+  type: string
+  label: Cluster Name
